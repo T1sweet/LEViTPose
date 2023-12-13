@@ -17,19 +17,18 @@
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
 ### Results on MPII val and test set
-|   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |Total|
+|   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |mean|
 |---------------|---------------|------------|-------|-------|----|----|----|-----|----|-----|----|-----|
-| LiteHEViTPose-T   | MPII val      |  256×256   | 3.21M | 1.75G | 95.9 |94.9 |87.4 |81.6 |87.4 | 81.6 |77.2 |87.2|
-| LiteHEViTPose-S   | MPII val      |  256×256   | 5.88M | 3.64G | 96.3 |95.2 |88.7 |83.3 |88.5 |83.9 |79.5 |88.5|
-| LiteHEViTPose-T   | MPII test     |  256×256   | 3.21M | 1.75G | 97.6 |95.1 |89.0 |83.6 |89.1 |83.9 |79.1 |88.7|
-| LiteHEViTPose-S   | MPII test     |  256×256   | 5.88M | 3.64G | 97.8 |95.9 |90.5 |86.0 |89.7 |86.0 |81.7 |90.1|
+| LiteHEViTPose-T   | MPII val      |  256×256   | 1.09M | 0.89G | 95.6	|93.8 |86.3	|79.9 |86.3	|79.9 |74.5	|85.9|
+| LiteHEViTPose-S   | MPII val      |  256×256   | 2.16M | 1.33G | 96.1	|95.0 |87.9	|81.9 |87.8	|82.6 |77.7	|87.7|
+| LiteHEViTPose-T   | MPII test     |  256×256   | 1.09M | 0.89G | 97.5	|94.6 |88.2	|82.1 |88.0	|82.2 |76.7	|87.6|
+| LiteHEViTPose-S   | MPII test     |  256×256   | 2.16M | 1.33G | 97.8	|95.4 |89.6	|84.1 |89.1	|84.0 |79.8	|89.0|
 
 ### Results on COCO val2017 and test-dev2017 set
 | Method     | Test set      | Input size |  AP | AP .5|AP .75|AP (M)|AP (L)| AR   |
 |------------|---------------|------------|-----|------|------|------|------|------| 
-| LiteHEViTPose-S| COCO val      | 256×256    | 75.4| 93.6 | 83.5 | 72.4 | 79.6 | 78.2 | 
-| LiteHEViTPose-S| COCO test-dev | 256×256    | 72.6| 92.0 | 80.9 | 69.2 | 78.2 | 78.0 |  
-
+| LiteHEViTPose-S| COCO val      | 256×256    | 71.0| 91.6 | 78.5 |	68.2 | 75.1 | 74.1|
+| LiteHEViTPose-S| COCO test-dev | 256×256    | 68.7| 90.8 | 76.7 |	65.4 | 74.2 | 74.4|
 
 ## Visualization
 Some examples of the prediction results of the LiteHEViTPose network model for
