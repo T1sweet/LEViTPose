@@ -6,6 +6,7 @@
 
 > [(英文)Lightweight Human Pose Estimation with Efficient Vision Transformer](https://arxiv.org/pdf/2311.13615.pdf)  
 > Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
+
 > [(中文)融入高效视觉变换器的轻量级人体姿态估计, 计算机工程与应用](https://arxiv.org/pdf/2311.13615.pdf)  
 > 吴程鹏, 谭光兴*, 陈海峰, 李春宇
 
