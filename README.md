@@ -4,10 +4,10 @@
 
 ## Paper
 
-> [(英文)Lightweight Human Pose Estimation with Efficient Vision Transformer](https://arxiv.org/pdf/2311.13615.pdf)  
+> [(英文)Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention]  
 > Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
 
-> [(中文)融入高效视觉变换器的轻量级人体姿态估计, 计算机工程与应用](https://arxiv.org/pdf/2311.13615.pdf)  
+> [(中文)融合Transformer和注意力的轻量高效人体姿态估计, 计算机工程与应用（北大核心/CSCD/EI）]
 > 吴程鹏, 谭光兴*, 陈海峰, 李春宇
 
 ## The network architecture of HEVITPose
@@ -19,23 +19,35 @@ With the code contained in this repo, you should be able to reproduce the follow
 ### Results on MPII val and test set
 |   Method      |   Test set    | Input size |Params |GFLOPs | Hea| Sho| Elb| Wri |Hip| Kne |Ank |mean|
 |---------------|---------------|------------|-------|-------|----|----|----|-----|----|-----|----|-----|
-| LiteHEViTPose-T   | MPII val      |  256×256   | 1.09M | 0.89G | 95.6	|93.8 |86.3	|79.9 |86.3	|79.9 |74.5	|85.9|
-| LiteHEViTPose-S   | MPII val      |  256×256   | 2.16M | 1.33G | 96.1	|95.0 |87.9	|81.9 |87.8	|82.6 |77.7	|87.7|
-| LiteHEViTPose-T   | MPII test     |  256×256   | 1.09M | 0.89G | 97.5	|94.6 |88.2	|82.1 |88.0	|82.2 |76.7	|87.6|
-| LiteHEViTPose-S   | MPII test     |  256×256   | 2.16M | 1.33G | 97.8	|95.4 |89.6	|84.1 |89.1	|84.0 |79.8	|89.0|
+| LEViTPose-T   | MPII val      |  256×256   | 1.09M | 0.89G | 95.6	|93.8 |86.3	|79.9 |86.3	|79.9 |74.5	|85.9|
+| LEViTPose-S   | MPII val      |  256×256   | 2.16M | 1.33G | 96.1	|95.0 |87.9	|81.9 |87.8	|82.6 |77.7	|87.7|
+| LEViTPose-T   | MPII test     |  256×256   | 1.09M | 0.89G | 97.5	|94.6 |88.2	|82.1 |88.0	|82.2 |76.7	|87.6|
+| LEViTPose-S   | MPII test     |  256×256   | 2.16M | 1.33G | 97.8	|95.4 |89.6	|84.1 |89.1	|84.0 |79.8	|89.0|
 
 ### Results on COCO val2017 and test-dev2017 set
 | Method     | Test set      | Input size |  AP | AP .5|AP .75|AP (M)|AP (L)| AR   |
 |------------|---------------|------------|-----|------|------|------|------|------| 
-| LiteHEViTPose-S| COCO val      | 256×256    | 71.0| 91.6 | 78.5 |	68.2 | 75.1 | 74.1|
-| LiteHEViTPose-S| COCO test-dev | 256×256    | 68.7| 90.8 | 76.7 |	65.4 | 74.2 | 74.4|
+| LEViTPose-S| COCO val      | 256×256    | 71.0| 91.6 | 78.5 |	68.2 | 75.1 | 74.1|
+| LEViTPose-T| COCO val      | 256×256    | 68.2 | 90.5 | 76.0 | 65.6 | 72.2| 71.5|
+| LEViTPose-S| COCO test-dev | 256×256    | 68.7| 90.8 | 76.7 |	65.4 | 74.2 | 74.4|
+
+### Comparison of inference speed of models in MPII Dataset 
+| Method          | Params | FLOPs  | FPS(GPU) | FPS(CPU) | mean |
+|-----------------|--------|--------|----------|----------|------|
+| HRNet-W32       | 28.02M | 9.85G  | 31.9     | 2.5      | 89.6 | 
+| Hourglass-52    | 94.85M | 28.67G | 25.7     | 1.3      | 88.9 | 
+| EfficientViT-M0 | 3.04M  | 1.89G  | 52.5     | 5.7      | 85.8 | 
+| LiteHRNet-30    | 1.76M  | 0.56G  | 29.9     | 4.5      | 85.1 | 
+| MobileNetV2     | 9.57M  | 2.12G  | 67.9     | 6.2      | 85.0 | 
+| PVT-S           | 28.17M | 5.47G  | 31.7     | 2.6      | 84.4 | 
+| LEViTPose-S     | 2.16M  | 1.45G  | 55.0     | 6.4      | 87.7 | 
+| LEViTPose-T     | 1.09M  | 0.89G  | 60.1     | 7.5      | 85.9 | 
 
 ## Visualization
 Some examples of the prediction results of the LiteHEViTPose network model for
 human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
 
 ![Visualization](./img/visualization.png)
-
 
 
 ## Installation
