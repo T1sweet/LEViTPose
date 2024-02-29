@@ -9,7 +9,7 @@
 
 ## The network architecture of HEVITPose
 
-![overview](img/NetworkGraph.png)
+![overview](img/NetworkGraph.jpg)
 
 ## Main Results
 With the code contained in this repo, you should be able to reproduce the following results. 
@@ -44,7 +44,7 @@ With the code contained in this repo, you should be able to reproduce the follow
 Some examples of the prediction results of the LEViTPose network model for
 human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
 
-![Visualization](./img/Visualization.png)
+![Visualization](./img/Visualization.jpg)
 
 
 ## Installation
