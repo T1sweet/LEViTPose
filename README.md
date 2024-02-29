@@ -152,9 +152,12 @@ If you find this code useful for your research, please cite our paper:
 
 ```bibtex
 @misc{wu2024LEViTPose,
-    title     = {Lightweight Human Pose Estimation with Efficient Vision Transformer},
-    author    = {Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li},
-
+    title   = {Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention},
+    author  = {Chengpeng Wu, Guangxing Tan, Haifeng Chen, Chunyu Li},
+    journal = {Computer Engineering and Applications},
+    volume = {},
+    number = {},
+    year = {2024},
 }
 ```
 
