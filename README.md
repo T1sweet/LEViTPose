@@ -45,7 +45,7 @@ With the code contained in this repo, you should be able to reproduce the follow
 | LEViTPose-T     | 1.09M  | 0.89G  |   60.1   |    7.5   | 85.9 | 
 
 ## Visualization
-Some examples of the prediction results of the LiteHEViTPose network model for
+Some examples of the prediction results of the LEViTPose network model for
 human posture include occlusion, multiple people, viewpoint and appearance change on the MPII (top) and COCO (bottom) data sets.
 
 ![Visualization](./img/visualization.png)
@@ -55,14 +55,14 @@ human posture include occlusion, multiple people, viewpoint and appearance chang
 
 ### 1. Clone code
 ```shell
-    git clone https://github.com/T1sweet/LiteHEViTPose
-    cd ./LiteHEViTPose
+    git clone https://github.com/T1sweet/LEViTPose
+    cd ./LEViTPose
 ```
 
 ### 2. Create a conda environment for this repo
 ```shell
-    conda create -n LiteHEViTPose python=3.9
-    conda activate LiteHEViTPose
+    conda create -n LEViTPose python=3.9
+    conda activate LEViTPose
 ```
 
 ### 3. Install PyTorch >= 1.6.0 following official instruction, e.g.
@@ -125,25 +125,25 @@ python tools/test.py config checkpoint
 `checkpoint` option means the training weight file and must be set.
 
 ```python
-# evaluate LiteHEViTPose-S on mpii val set
-python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LiteHEViTPose-S_mpii_256x256.py /work_dir/LiteHEViTPose/LiteHEViTPose-S.pth
+# evaluate LEViTPose-S on mpii val set
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-S_mpii_256x256.py /work_dir/LEViTPose/LEViTPose-S.pth
 
-# evaluate LiteHEViTPose-T on mpii val set
-python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LiteHEViTPose-T_mpii_256x256.py /work_dir/LiteHEViTPose/LiteHEViTPose-T.pth
+# evaluate LEViTPose-T on mpii val set
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-T_mpii_256x256.py /work_dir/LEViTPose/LEViTPose-T.pth
 
-# evaluate LiteHEViTPose-S on coco val set
-python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LiteHEViTPose-B_coco_256x256.py /work_dir/LiteHEViTPose/LiteHEViTPose-B_coco.pth
+# evaluate LEViTPose-S on coco val set
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_coco_256x256.py /work_dir/LEViTPose/LEViTPose-B_coco.pth
 
 ```
 
 ### 3. Train Model
-Change the checkpoint path by modifying `pretrained` in LiteHEViTPose-B_mpii_256x256.py, and run following commands:
+Change the checkpoint path by modifying `pretrained` in LEViTPose-B_mpii_256x256.py, and run following commands:
 ```python
-# evaluate LiteHEViTPose-S on mpii val set
-python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LiteHEViTPose-B_mpii_256x256.py
+# evaluate LEViTPose-S on mpii val set
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_mpii_256x256.py
 
-# evaluate LiteHEViTPose-S on coco val2017 set
-python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LiteHEViTPose-B_coco_256x256.py
+# evaluate LEViTPose-S on coco val2017 set
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_coco_256x256.py
 ```
 
 ## Contact me
@@ -155,7 +155,7 @@ CP935011539@outlook.com.
 If you find this code useful for your research, please cite our paper:
 
 ```bibtex
-@misc{wu2024litehevitpose,
+@misc{wu2024LEViTPose,
     title     = {Lightweight Human Pose Estimation with Efficient Vision Transformer},
     author    = {Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li},
 
