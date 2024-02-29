@@ -1,14 +1,14 @@
-# Lightweight Human Pose Estimation with Efficient Vision Transformer
+# Human Pose Estimation
 
 ## Code coming soon...
 
 ## Paper
-
-> [(中文)融合Transformer和注意力的轻量高效人体姿态估计, 计算机工程与应用（北大核心/CSCD/EI）]
+> (英文)Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention
+> Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
+> (中文)融合Transformer和注意力的轻量高效人体姿态估计, 计算机工程与应用（北大核心/CSCD/EI）
 > 吴程鹏, 谭光兴*, 陈海峰, 李春宇
 
-> [(英文)Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention]  
-> Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
+
 
 ## The network architecture of HEVITPose
 
