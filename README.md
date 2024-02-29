@@ -7,7 +7,7 @@
 
 > 吴程鹏, 谭光兴, 陈海峰, 李春宇. 融合Transformer和注意力的轻量高效人体姿态估计[J]. 计算机工程与应用. 2024.
 
-## The network architecture of HEVITPose
+## The network architecture of LEVITPose
 
 ![overview](img/NetworkGraph.jpg)
 
@@ -115,7 +115,7 @@ Download [MPII](http://human-pose.mpi-inf.mpg.de/#download) and [COCO ](https://
 
 
 ### 2. Evaluate Model
-Change the checkpoint path by modifying `pretrained` in HEViTPose-B_mpii_256x256.py, and run following commands:
+Change the checkpoint path by modifying `pretrained` in LEViTPose-S_mpii_256x256.py, and run following commands:
 python tools/test.py config checkpoint
 `config` option means the configuration file, which must be set.
 `checkpoint` option means the training weight file and must be set.
@@ -128,18 +128,18 @@ python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTP
 python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-T_mpii_256x256.py /work_dir/LEViTPose/LEViTPose-T.pth
 
 # evaluate LEViTPose-S on coco val set
-python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_coco_256x256.py /work_dir/LEViTPose/LEViTPose-B_coco.pth
+python tools/test.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-S_coco_256x256.py /work_dir/LEViTPose/LEViTPose-S_coco.pth
 
 ```
 
 ### 3. Train Model
-Change the checkpoint path by modifying `pretrained` in LEViTPose-B_mpii_256x256.py, and run following commands:
+Change the checkpoint path by modifying `pretrained` in LEViTPose-S_mpii_256x256.py, and run following commands:
 ```python
 # evaluate LEViTPose-S on mpii val set
-python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_mpii_256x256.py
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-S_mpii_256x256.py
 
 # evaluate LEViTPose-S on coco val2017 set
-python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-B_coco_256x256.py
+python tools/train.py ../configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/LEViTPose-S_coco_256x256.py
 ```
 
 ## Contact me
