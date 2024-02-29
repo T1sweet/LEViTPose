@@ -4,11 +4,11 @@
 
 ## Paper
 
-> [(英文)Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention]  
-> Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
-
 > [(中文)融合Transformer和注意力的轻量高效人体姿态估计, 计算机工程与应用（北大核心/CSCD/EI）]
 > 吴程鹏, 谭光兴*, 陈海峰, 李春宇
+
+> [(英文)Lightweight and Efficient Human Pose Estimation Fusing Transformer and Attention]  
+> Chengpeng Wu, Guangxing Tan*, Haifeng Chen, Chunyu Li
 
 ## The network architecture of HEVITPose
 
@@ -34,14 +34,14 @@ With the code contained in this repo, you should be able to reproduce the follow
 ### Comparison of inference speed of models in MPII Dataset 
 | Method          | Params | FLOPs  | FPS(GPU) | FPS(CPU) | mean |
 |-----------------|--------|--------|----------|----------|------|
-| HRNet-W32       | 28.02M | 9.85G  | 31.9     | 2.5      | 89.6 | 
-| Hourglass-52    | 94.85M | 28.67G | 25.7     | 1.3      | 88.9 | 
-| EfficientViT-M0 | 3.04M  | 1.89G  | 52.5     | 5.7      | 85.8 | 
-| LiteHRNet-30    | 1.76M  | 0.56G  | 29.9     | 4.5      | 85.1 | 
-| MobileNetV2     | 9.57M  | 2.12G  | 67.9     | 6.2      | 85.0 | 
-| PVT-S           | 28.17M | 5.47G  | 31.7     | 2.6      | 84.4 | 
-| LEViTPose-S     | 2.16M  | 1.45G  | 55.0     | 6.4      | 87.7 | 
-| LEViTPose-T     | 1.09M  | 0.89G  | 60.1     | 7.5      | 85.9 | 
+| HRNet-W32       | 28.02M | 9.85G  |   31.9   |    2.5   | 89.6 | 
+| Hourglass-52    | 94.85M | 28.67G |   25.7   |    1.3   | 88.9 | 
+| EfficientViT-M0 | 3.04M  | 1.89G  |   52.5   |    5.7   | 85.8 | 
+| LiteHRNet-30    | 1.76M  | 0.56G  |   29.9   |    4.5   | 85.1 | 
+| MobileNetV2     | 9.57M  | 2.12G  |   67.9   |    6.2   | 85.0 | 
+| PVT-S           | 28.17M | 5.47G  |   31.7   |    2.6   | 84.4 | 
+| LEViTPose-S     | 2.16M  | 1.45G  |   55.0   |    6.4   | 87.7 | 
+| LEViTPose-T     | 1.09M  | 0.89G  |   60.1   |    7.5   | 85.9 | 
 
 ## Visualization
 Some examples of the prediction results of the LiteHEViTPose network model for
