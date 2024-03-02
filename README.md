@@ -7,7 +7,7 @@
 
 > 吴程鹏, 谭光兴, 陈海峰, 李春宇. 融合Transformer和注意力的轻量高效人体姿态估计[J]. 计算机工程与应用. 2024.
 
-## The network architecture of LEVITPose
+## The network architecture of LEViTPose
 
 ![overview](img/NetworkGraph.jpg)
 
